@@ -13,6 +13,11 @@
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+
+a {
+	color: #722f37;
+	&:hover, &:visited, &:active { color: #722f37; }
+ }
 }
 
 body {
@@ -66,6 +71,14 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+
+}
+
+.pagination {
+	a {
+	color: #722f37;
+	&:hover, &:visited, &:active { color: #722f37; }
+ }
 }
 
 .carousel-inner {
@@ -81,13 +94,12 @@ blockquote p {
 	width: 100%;
 	position: absolute;
 	left:0;
-	margin-bottom: 10px;
+	padding: 40px 10px;
 }
 
 .carousel {
 	box-shadow: 0px 3px 8px #2a2a2a;
 }
-
 
 
 
