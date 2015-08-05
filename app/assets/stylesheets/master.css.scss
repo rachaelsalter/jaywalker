@@ -25,6 +25,7 @@ body {
 	border-radius: 0;
 	border: none;
 	box-shadow: 10px 10px 5px grey;
+	margin-bottom:0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -67,11 +68,25 @@ blockquote p {
   display: inline;
 }
 
+.carousel-inner {
+	height: 470px;
+	width: 100%;
+}
 
+.carousel-caption {
+	font-family: 'walkway_boldregular';
+	font-size: 40px;
+	text-shadow: rgba(0,0,0,0.95) 2px 2px;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	position: absolute;
+	left:0;
+	margin-bottom: 10px;
+}
 
-
-
-
+.carousel {
+	box-shadow: 0px 3px 8px #2a2a2a;
+}
 
 
 
