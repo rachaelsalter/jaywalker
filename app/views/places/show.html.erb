@@ -60,18 +60,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
   </div>
 
 <div class="clear"></div>
+<div class="booyah-box">
   <%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
     <%= f.input :caption %>
+    <%= f.input :picture %>
     <%= f.submit "Add a Photo", :class => 'btn btn-success' %>
   <% end %>
 
 <h1>Photos</h1>
 <% @place.photos.each do |photo| %>
+  <%= image_tag photo.picture %>
+   <%= photo.caption %>
   <div>
-    <b><%= photo.caption %></b>
+   
   </div>
 <% end %>
- 
+</div>
+
   <br />
   <br />
   <br />
