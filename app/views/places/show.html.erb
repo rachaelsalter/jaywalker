@@ -64,6 +64,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <%= f.input :caption %>
     <%= f.submit "Add a Photo", :class => 'btn btn-success' %>
   <% end %>
+
+<h1>Photos</h1>
+<% @place.photos.each do |photo| %>
+  <div>
+    <b><%= photo.caption %></b>
+  </div>
+<% end %>
  
   <br />
   <br />
