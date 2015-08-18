@@ -47,20 +47,13 @@
   	<i><%= place.address %></i><br /><br />
   	<p><%= place.description %></p><br />
 
-
 <% if place.photos.present? %>
-      
-        <%= image_tag place.photos.order("id ASC").last.picture, :class => 'img-responsive' %> 
-      
+      <%= image_tag place.photos.order("id ASC").last.picture, :class => 'img-responsive' %> 
 <% end %>
-
-
 
 <% if place.user.present? %> 
   	  <small><%= place.user.email %></small>
 <% end %>
-
-
 
  <% if place.comments.present? && place.last_comment.humanized_rating.present? %>
    <div class="col-xs-12">  
